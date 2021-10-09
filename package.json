@@ -1,0 +1,31 @@
+{
+  "name": "@tdajs/graph-reconstruction",
+  "version": "0.0.1",
+  "description": "JS package to reconstruction metric graphs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "doc": "typedoc src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "watch 'npm run build' ./src",
+    "bundle": "npm run build && browserify ./dist/index.js --s SC -o ./dist/min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/tdajs/graph-reconstruction.git"
+  },
+  "author": "Sushovan Majhi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tdajs/graph-reconstruction/issues"
+  },
+  "homepage": "https://github.com/tdajs/graph-reconstruction#readme",
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "browserify-shim": "^3.8.14",
+    "typedoc": "^0.22.4",
+    "typescript": "^4.3.5",
+    "watch": "^0.13.0"
+  }
+}
